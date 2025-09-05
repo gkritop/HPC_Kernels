@@ -66,6 +66,29 @@ The goal: a project you can **read in one sitting, tweak in minutes, and immedia
 - **Scan**: Achieves memory-bound throughput as expected.
 - **Plots**: PNG figures highlight scaling, bandwidth vs compute, and roofline ceilings.
 
+### Figures
+
+<p align="center">
+  <img src="plots/gflops_matmul_naive.png" alt="matmul_naive — GFLOP/s (median, 95% CI)" width="48%">
+  <img src="plots/gflops_matmul_blocked.png" alt="matmul_blocked — GFLOP/s (median, 95% CI)" width="48%">
+</p>
+
+<p align="center">
+  <img src="plots/gbps_matmul_naive.png" alt="matmul_naive — GB/s (median, 95% CI)" width="48%">
+  <img src="plots/gbps_matmul_blocked.png" alt="matmul_blocked — GB/s (median, 95% CI)" width="48%">
+</p>
+
+<p align="center">
+  <img src="plots/speedup_vs_matmul_naive.png" alt="Speedup vs matmul_naive" width="80%">
+  <br><sub>Speedup of blocked GEMM vs naive baseline (same sizes, dtype).</sub>
+</p>
+
+<p align="center">
+  <img src="plots/roofline.png" alt="Roofline plot (compute ceiling 220 GF/s, bandwidth 60 GB/s)" width="80%">
+  <br><sub>Roofline with arithmetic intensity vs attained performance.</sub>
+</p>
+
+
 ---
 
 ## How to Run
