@@ -122,7 +122,7 @@ timestamp,op,M,N,K,size,dtype,reps,ns_per_rep,gflops,gbps,checksum
 ### Plot Results
 
 ```bash
-python3 ./scripts/plot_bench.py   build/results_matmul_naive.csv build/results_matmul_blocked.csv   build/results_reduction.csv build/results_scan.csv   --baseline matmul_naive --roofline 220:60 --outdir plots
+python ./scripts/plot_bench.py   build/results_matmul_naive.csv build/results_matmul_blocked.csv   build/results_reduction.csv build/results_scan.csv   --baseline matmul_naive --roofline 220:60 --outdir plots
 ```
 
 Produces:
