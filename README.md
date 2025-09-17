@@ -2,7 +2,7 @@
 
 ## Overview
 
-**HPC_Kernels** is a compact **C++17 project** for experimenting with **classic CPU kernels** (couldn't use CUDA to utilize GPU because of hardware).
+**HPC_Kernels** is a **C++17 project** for experimenting with **classic CPU kernels** (couldn't use CUDA to utilize GPU because of hardware).
 It implements three building blocks of numerical computing:
 
 1. **Matrix multiplication (GEMM)** — naive triple-loop and a simple **cache-blocked** version.
@@ -14,8 +14,6 @@ The project includes:
 - A **CLI benchmark driver** (`hpc_bench`) that writes CSV logs.
 - A **plotting script** (`plot_bench.py`) that outputs clean, minimal **PNG figures**.
 - A **unit test suite** using GoogleTest for correctness checks.
-
-The goal: a project you can **read in one sitting, tweak in minutes, and immediately visualize results**.
 
 ---
 
@@ -29,7 +27,7 @@ The goal: a project you can **read in one sitting, tweak in minutes, and immedia
 
 ## Goals
 
-- Provide a **readable reference** for core HPC kernels in modern C++.
+- Provide a **readable reference** for core HPC kernels in C++.
 - Practice **performance measurement** (GFLOP/s, GB/s, median timings roofline).
 - Deliver a **lightweight benchmark CLI** that is easily extensible.
 - Exercise a complete workflow: **CMake build, GoogleTest, Python plotting**.
